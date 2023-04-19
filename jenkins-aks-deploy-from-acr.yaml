@@ -18,6 +18,8 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
+      imagePullSecrets:
+      - name : aksjenkins
 # service type loadbalancer       
 ---
 apiVersion: v1
